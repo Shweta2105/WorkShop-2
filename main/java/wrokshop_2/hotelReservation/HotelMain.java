@@ -37,8 +37,10 @@ public class HotelMain {
 
 	}
 
-	public void cheapestrate() {
-
+	public void gethotels() {
+		System.out.println(hotellist.toString());
+		
 	}
 
+	
 }

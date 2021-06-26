@@ -14,14 +14,16 @@ public class HotelReservationTest {
 		HotelMain hotel = new HotelMain();
 		hotel.welcome();
 		HotelDetails lakewood = new HotelDetails("Lakewood", "3Star","weekday rate=110","weekend rate = 90");
-		Assert.assertTrue(hotel.addHotel(lakewood));
+		HotelDetails Bridgewood = new HotelDetails("Bridgewood", "4Star","weekday rate=160","weekend rate = 100");
+		HotelDetails Ridgewood = new HotelDetails("Ridgewood", "3Star","weekday rate=110","weekend rate = 90");
+		hotel.addHotel(lakewood);
+		hotel.addHotel(Bridgewood);
+		hotel.addHotel(Ridgewood);
+		hotel.gethotels();
+		
 		 
 	}
 
 	
-	/*public void toFindCheapestHotelForGivenDate() {
-		HotelMain hotel new HotelMain();
-		hotel.cheapestrate();
-		
-	}*/
+	
 }
