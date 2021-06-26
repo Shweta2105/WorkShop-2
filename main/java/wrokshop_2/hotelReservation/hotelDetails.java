@@ -1,12 +1,18 @@
 package wrokshop_2.hotelReservation;
 
-public class hotelDetails {
+
+
+public class HotelDetails {
 	private String hotelname;
 	private String rating;
 	private String weekrates;
 	private String weekenrates;
-	public hotelDetails(String hotelname2, String rating2, String weekrates2, String weekendrates) {
-}
+	public HotelDetails(String hotelname2, String rating2, String weekrates2, String weekendrates) {
+		this.hotelname = hotelname;
+		this.rating = rating;
+		this.weekrates = weekrates;
+		this.weekenrates = weekenrates;
+	}
 	public String getHotelname() {
 		return hotelname;
 	}
